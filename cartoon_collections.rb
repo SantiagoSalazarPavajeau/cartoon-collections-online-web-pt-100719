@@ -14,8 +14,9 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find do |cheese| 
-    if cheese_types.include?(cheese)
+  cheese_types.find do |cheese| 
+    if array.include?(cheese)
+    # this if statement uses include? o check if the element in our array is included in the cheese_types array so it compares the two arrays by running each cheese on the cheese_types array it could 
       return cheese
     end
   end
