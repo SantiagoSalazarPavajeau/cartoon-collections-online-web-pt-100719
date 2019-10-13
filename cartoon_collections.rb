@@ -7,10 +7,12 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  array.any? {|word| word.length > 4}
+  array.any? {|call| word.length > 4}
+  # .any? checks to see if there are calls bigger than 4 returns true if there is at least one 
+  # it goes to false if all calls are small
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  array.include?(cheese_types)
 end
