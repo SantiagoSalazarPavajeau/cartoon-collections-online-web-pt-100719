@@ -7,7 +7,7 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  array.any? {|call| word.length > 4}
+  array.any? {|call| call.length > 4}
   #any? checks to see if there are calls bigger than 4 returns true if there is at least one 
   #it goes to false if all calls are small
 end
